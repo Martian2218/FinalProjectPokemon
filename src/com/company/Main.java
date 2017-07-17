@@ -33,7 +33,7 @@ public class Main {
     public static String MovePokemon43 = "Ice Beam";
     public static String MovePokemon44 = "Hurricane";
     public static String EliteMove11 = "Ice Beam";
-    public static String EliteMove12 = "Ice Punch";
+    public static String EliteMove12 = "Sheer Cold";
     public static String EliteMove13 = "Giga Impact";
     public static String EliteMove14 = "Blizzard";
 
