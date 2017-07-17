@@ -9,6 +9,6 @@ public class Azumarill extends GameObject
 {
     public Azumarill()
     {
-        super("Azumarill",250,250,"Azumarill.jpg");
+        super("Azumarill",250,250,"Azumarill.png");
     }
 }

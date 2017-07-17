@@ -120,14 +120,29 @@ public class Main {
     public static int SpDefense2=0;
     public static int Speed1=0;
     public static int Speed2=0;
+    //Normal=1
+    //Fire=2
+    //Ice=3
+    //Water=4
+    //Dragon=5
+    //Electric=6
+    //Grass=7
+    //Fairy=8
+    //Poison=9
+    //Dark=10
+    //Flying=11
 
 
     public static void main(String[] args) {
-       /* while(Game.getQuit() == false)
+        Game.initialize(800, 600, 60, new Level1());
+        while(Game.getQuit() == false)
         {
             Game.update();
-        }*/
-        Game.initialize(1000, 750, 60, new Level1());
+        }
 
+        Game.destroy();
+
+
+        }
     }
-}
+
