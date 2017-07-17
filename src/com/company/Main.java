@@ -1,5 +1,7 @@
 package com.company;
 
+import edu.digipen.Game;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -1249,6 +1251,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Game.initialize(800, 600, 60, new Level1());
         while (RunCode == true) {
             //check();
             BeforeBattle();
