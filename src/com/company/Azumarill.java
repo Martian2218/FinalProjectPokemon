@@ -5,7 +5,7 @@ import edu.digipen.gameobject.GameObject;
 import javax.xml.soap.Text;
 
 /**
- * Created by yuuki.sawanoi on 7/17/2017.
+ * Created by kengo.shirokane on 7/17/2017.
  */
 public class Azumarill extends GameObject
 {
