@@ -12,6 +12,8 @@ public class Main {
     public static String Pokemon4="Gyarados";
     public static String Elite4P1="Regice";
     public static String Elite4P2="Tapu Lele";
+    public static String Elite4P3="Cofagrigus";
+    public static String Elite4P4="Incineroar";
     public static String MovePokemon11 = "Iron Tail";
     public static String MovePokemon12 = "Thunderbolt";
     public static String MovePokemon13 = "Electro Ball";
@@ -37,6 +39,16 @@ public class Main {
     public static String EliteMove22="Moon Blast";
     public static String EliteMove23="Psyshock";
     public static String EliteMove24="Hidden Power (Fire)";
+
+    public static String EliteMove31="Night Shade";
+    public static String EliteMove32="Shadow Ball";
+    public static String EliteMove33="Psychic";
+    public static String EliteMove34="Energy Ball";
+
+    public static String EliteMove41="Body Slam";
+    public static String EliteMove42="Flamethrower";
+    public static String EliteMove43="Overheat";
+    public static String EliteMove44="Shadow Claw";
 
     public static boolean Restricted1=false;
     public static boolean Restricted2=false;
@@ -95,6 +107,18 @@ public class Main {
     public static int typey2=0;
     public static int xHit=1;
     public static int yHit=1;
+    public static int Attack1=0;
+    public static int HPS1=0;
+    public static int Attack2=0;
+    public static int HPS2=0;
+    public static int SpAttack1=0;
+    public static int Defense1=0;
+    public static int SpDefense1=0;
+    public static int SpAttack2=0;
+    public static int Defense2=0;
+    public static int SpDefense2=0;
+    public static int Speed1=0;
+    public static int Speed2=0;
     //Normal=1
     //Fire=2
     //Ice=3

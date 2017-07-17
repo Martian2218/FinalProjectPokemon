@@ -11,7 +11,7 @@ public class DamageCalculation
     public static Random rand = new Random();
     public static Scanner consoleInput = new Scanner(System.in);
     public static int Damage=0;
-    public DamageCalculation(int A, int B, int C, int D, int X, int Y)
+    public int DamageCalculation(int A, int B, int C, int D, int X, int Y)
     {
         int Z=rand.nextInt(38)+217;
         Damage=2*A;
@@ -25,6 +25,6 @@ public class DamageCalculation
         Damage/=10;
         Damage*=Z;
         Damage/=255;
-
+        return Damage;
     }
 }
