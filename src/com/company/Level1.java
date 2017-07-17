@@ -10,8 +10,12 @@ import edu.digipen.level.GameLevel;
 public class Level1 extends GameLevel {
     @Override
     public void create() {
-        GameObject Azumarill= new Azumarill();
-        ObjectManager.addGameObject(Azumarill);
+        GameObject Background= new Background();
+        ObjectManager.addGameObject(Background);
+        GameObject Hala= new Hala();
+        ObjectManager.addGameObject(Hala);
+        GameObject HalaQ1= new HalaQ1();
+        ObjectManager.addGameObject(HalaQ1);
     }
 
     @Override
