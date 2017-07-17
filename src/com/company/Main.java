@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static Random rand = new Random();
     public static Scanner consoleInput = new Scanner(System.in);
-<<<<<<< Updated upstream
+
     public static String Pokemon1 = "Pikachu";
     public static String Pokemon2 = "Mimikyu";
     public static String Pokemon3 = "Charizard";
@@ -26,10 +26,10 @@ public class Main {
     public static String MovePokemon23 = "Shadow Ball";
     public static String MovePokemon24 = "Play Rough";
     public static String MovePokemon31 = "Hyper Beam";
-    public static String MovePokemon32 = "Fire Spin";
+    public static String MovePokemon32 = "Fire Wheel";
     public static String MovePokemon33 = "Toxic";
     public static String MovePokemon34 = "Dragon Claw";
-    public static String MovePokemon41 = "Dragon Pulse";
+    public static String MovePokemon41 = "Draco Meteor";
     public static String MovePokemon42 = "Hydro Pump";
     public static String MovePokemon43 = "Ice Beam";
     public static String MovePokemon44 = "Hurricane";
@@ -134,8 +134,7 @@ public class Main {
     //Flying=11
 
     public static void BeforeBattle() {
-=======
->>>>>>> Stashed changes
+
 
         System.out.println("Choose Your Pokemon (Choose from " + Pokemon3 + ", " + Pokemon2 + " or " + Pokemon1 + " or " + Pokemon4 + ")");
         String Pokemon = consoleInput.next();
@@ -169,19 +168,19 @@ public class Main {
     public static void main(String[] args) {
         Game.initialize(1000, 750, 60, new Level1());
 
-<<<<<<< Updated upstream
+
         while (Game.getQuit() == false) {
             Game.update();
         }
         Game.destroy();
 
-=======
+
         while(Game.getQuit() == false)
         {
             Game.update();
         }
         Game.destroy();
->>>>>>> Stashed changes
+
     }
 }
 
