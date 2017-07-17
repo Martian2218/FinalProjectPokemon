@@ -5,11 +5,12 @@ import edu.digipen.gameobject.GameObject;
 /**
  * Created by kengo.shirokane on 7/17/2017.
  */
-public class Charizard extends GameObject  {
+public class Mimikyu extends GameObject {
 
-    public Charizard()
+    public Mimikyu()
     {
-        super("Charizard",250,250,"Charizard.png");
+        super("Mimikyu",250,250,"Mimikyu.png");
     }
 
 }
+
