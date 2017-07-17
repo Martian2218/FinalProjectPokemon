@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static Random rand = new Random();
     public static Scanner consoleInput = new Scanner(System.in);
+<<<<<<< Updated upstream
     public static String Pokemon1 = "Pikachu";
     public static String Pokemon2 = "Mimikyu";
     public static String Pokemon3 = "Charizard";
@@ -133,6 +134,8 @@ public class Main {
     //Flying=11
 
     public static void BeforeBattle() {
+=======
+>>>>>>> Stashed changes
 
         System.out.println("Choose Your Pokemon (Choose from " + Pokemon3 + ", " + Pokemon2 + " or " + Pokemon1 + " or " + Pokemon4 + ")");
         String Pokemon = consoleInput.next();
@@ -166,11 +169,19 @@ public class Main {
     public static void main(String[] args) {
         Game.initialize(1000, 750, 60, new Level1());
 
+<<<<<<< Updated upstream
         while (Game.getQuit() == false) {
             Game.update();
         }
         Game.destroy();
 
+=======
+        while(Game.getQuit() == false)
+        {
+            Game.update();
+        }
+        Game.destroy();
+>>>>>>> Stashed changes
     }
 }
 

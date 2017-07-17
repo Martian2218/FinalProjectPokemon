@@ -1,8 +1,12 @@
 package com.company;
 
+import edu.digipen.InputManager;
 import edu.digipen.gameobject.GameObject;
 import edu.digipen.gameobject.ObjectManager;
 import edu.digipen.level.GameLevel;
+
+import javax.swing.*;
+import java.awt.event.KeyEvent;
 
 /**
  * Created by kengo.shirokane on 7/17/2017.
@@ -16,6 +20,10 @@ public class Level1 extends GameLevel {
         ObjectManager.addGameObject(Hala);
         GameObject HalaQ1= new HalaQ1();
         ObjectManager.addGameObject(HalaQ1);
+        if(InputManager.isPressed(KeyEvent.VK_ENTER))
+        {
+
+        }
     }
 
     @Override
