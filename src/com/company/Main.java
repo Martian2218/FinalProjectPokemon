@@ -66,8 +66,7 @@ public class Main {
     public static boolean burned2=false;
     public static boolean Disabled1=false;
     public static boolean Disabled2=false;
-    public static String Error1="Please Choose a Valid Pokemon (This is Case Sensitive!)";
-    public static String Error2="Please Choose a Valid Move (This is Case Sensitive!)";
+
     public static String Opponent="Nothing";
     public static int Damage2M=0;
     public static int Damage2P=0;
