@@ -1,5 +1,7 @@
 package com.company;
 
+import edu.digipen.gameobject.GameObject;
+import edu.digipen.gameobject.ObjectManager;
 import edu.digipen.level.GameLevel;
 
 /**
@@ -8,7 +10,8 @@ import edu.digipen.level.GameLevel;
 public class Level1 extends GameLevel {
     @Override
     public void create() {
-
+        GameObject Azumarill= new Azumarill();
+        ObjectManager.addGameObject(Azumarill);
     }
 
     @Override
