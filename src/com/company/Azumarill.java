@@ -3,7 +3,7 @@ package com.company;
 import edu.digipen.gameobject.GameObject;
 
 /**
- * Created by yuuki.sawanoi on 7/17/2017.
+ * Created by kengo.shirokane on 7/17/2017.
  */
 public class Azumarill extends GameObject
 {
