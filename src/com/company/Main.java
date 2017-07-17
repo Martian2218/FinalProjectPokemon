@@ -10,6 +10,8 @@ public class Main {
     public static String Pokemon2="Mimikyu";
     public static String Pokemon3="Charizard";
     public static String Pokemon4="Gyarados";
+    public static String Elite4P1="Regice";
+    public static String Elite4P2="Tapu Lele";
     public static String MovePokemon11 = "Iron Tail";
     public static String MovePokemon12 = "Thunderbolt";
     public static String MovePokemon13 = "Electro Ball";
@@ -26,6 +28,16 @@ public class Main {
     public static String MovePokemon42 = "Hydro Pump";
     public static String MovePokemon43 = "Ice Beam";
     public static String MovePokemon44 = "Hurricane";
+    public static String EliteMove11="Ice Beam";
+    public static String EliteMove12="Ice Punch";
+    public static String EliteMove13="Giga Impact";
+    public static String EliteMove14="Blizzard";
+
+    public static String EliteMove21="Psychic";
+    public static String EliteMove22="Moon Blast";
+    public static String EliteMove23="Psyshock";
+    public static String EliteMove24="Hidden Power (Fire)";
+
     public static boolean Restricted1=false;
     public static boolean Restricted2=false;
     public static int xR1=0;
