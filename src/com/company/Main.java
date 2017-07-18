@@ -13,6 +13,7 @@ public class Main {
     public static String Pokemon3 = "Charizard";
     public static String Pokemon4 = "Gyarados";
     public static String Pokemon5 = "Azumaril";
+    public static String Pokemon6 = "Tyrantrum";
     public static String Elite4P1 = "Regice";
     public static String Elite4P2 = "Tapu Lele";
     public static String Elite4P3 = "Cofagrigus";
@@ -35,6 +36,14 @@ public class Main {
     public static String MovePokemon42 = "Hydro Pump";
     public static String MovePokemon43 = "Ice Beam";
     public static String MovePokemon44 = "Hurricane";
+    public static String MovePokemon51 = "Aqua Tail";
+    public static String MovePokemon52 = "Blizzard";
+    public static String MovePokemon53 = "Ice Beam";
+    public static String MovePokemon54 = "Hurricane";
+    public static String MovePokemon61 = "Dragon Pulse";
+    public static String MovePokemon62 = "Hydro Pump";
+    public static String MovePokemon63 = "Ice Beam";
+    public static String MovePokemon64 = "Hurricane";
     public static String EliteMove11 = "Ice Beam";
     public static String EliteMove12 = "Sheer Cold";
     public static String EliteMove13 = "Giga Impact";
@@ -50,10 +59,21 @@ public class Main {
     public static String EliteMove33 = "Psychic";
     public static String EliteMove34 = "Moongeist Beam";
 
+
     public static String EliteMove41 = "Over Heat";
     public static String EliteMove42 = "Flamethrower";
     public static String EliteMove43 = "Overheat";
     public static String EliteMove44 = "Shadow Claw";
+
+    public static String EliteMove51 = "Over Heat";
+    public static String EliteMove52 = "Flamethrower";
+    public static String EliteMove53 = "Overheat";
+    public static String EliteMove54 = "Shadow Claw";
+
+    public static String EliteMove61 = "Over Heat";
+    public static String EliteMove62 = "Flamethrower";
+    public static String EliteMove63 = "Overheat";
+    public static String EliteMove64 = "Shadow Claw";
 
     public static boolean Restricted1 = false;
     public static boolean Restricted2 = false;
