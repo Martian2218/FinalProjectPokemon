@@ -12,10 +12,13 @@ public class Main {
     public static String Pokemon2 = "Mimikyu";
     public static String Pokemon3 = "Charizard";
     public static String Pokemon4 = "Gyarados";
+    public static String Pokemon5 = "Azumaril";
     public static String Elite4P1 = "Regice";
     public static String Elite4P2 = "Tapu Lele";
     public static String Elite4P3 = "Cofagrigus";
     public static String Elite4P4 = "Incineroar";
+    public static String Elite4P5 = "Rotom";
+    public static String Elite4P6 = "Garchomp";
     public static String MovePokemon11 = "Iron Tail";
     public static String MovePokemon12 = "Thunderbolt";
     public static String MovePokemon13 = "Electro Ball";
@@ -45,9 +48,9 @@ public class Main {
     public static String EliteMove31 = "Night Shade";
     public static String EliteMove32 = "Shadow Ball";
     public static String EliteMove33 = "Psychic";
-    public static String EliteMove34 = "Energy Ball";
+    public static String EliteMove34 = "Moongeist Beam";
 
-    public static String EliteMove41 = "Body Slam";
+    public static String EliteMove41 = "Over Heat";
     public static String EliteMove42 = "Flamethrower";
     public static String EliteMove43 = "Overheat";
     public static String EliteMove44 = "Shadow Claw";
@@ -135,7 +138,7 @@ public class Main {
     public static void BeforeBattle() {
 
 
-        System.out.println("Choose Your Pokemon (Choose from " + Pokemon3 + ", " + Pokemon2 + " or " + Pokemon1 + " or " + Pokemon4 + ")");
+        System.out.println("Choose Your Pokemon (Choose from " + Pokemon3 + ", " + Pokemon2 + " or " + Pokemon1 + " or " + Pokemon4 + "or" + Pokemon5 + "or" + Pokemon6);
         String Pokemon = consoleInput.next();
         while (!(Pokemon.equals(Pokemon2) || Pokemon.equals(Pokemon1) || Pokemon.equals(Pokemon3) || Pokemon.equals(Pokemon4))) {
             System.out.println("Invalid");
@@ -162,6 +165,16 @@ public class Main {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 4;
+        }
+        if (Pokemon.equals(Pokemon5)) {
+            typex1 = 4;
+            typey1 = 11;
+            UserNumber = 5;
+        }
+        if (Pokemon.equals(Pokemon6)) {
+            typex1 = 4;
+            typey1 = 11;
+            UserNumber = 6;
         }
     }
     public static void main(String[] args) {
