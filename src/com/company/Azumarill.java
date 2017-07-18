@@ -9,8 +9,8 @@ public class Azumarill extends GameObject
 {
     public Azumarill()
     {
-        super("Azumarill",200,200,"Azumarill2.png");
-        setPosition(-300, -150);
+        super("Azumarill",175,175,"Azumarill2.png");
+        setPosition(-300, -200);
 
     }
 
