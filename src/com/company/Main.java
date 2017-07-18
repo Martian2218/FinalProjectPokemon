@@ -143,6 +143,20 @@ public class Main {
     public static int SpDefense2 = 0;
     public static int Speed1 = 0;
     public static int Speed2 = 0;
+
+    public static int PikachuSpeed = 0;
+    public static int MmikyuSpeed = 0;
+    public static int AzumarillSpeed = 0;
+    public static int CharizardSpeed = 0;
+    public static int GyaradosSpeed = 0;
+    public static int TyrantrumSpeed = 0;
+    public static int Elite4P1Sp = 0;
+    public static int Elite4P2Sp = 0;
+    public static int Elite4P3Sp = 0;
+    public static int Elite4P4Sp = 0;
+    public static int Elite4P5Sp = 0;
+    public static int Elite4P6Sp =0;
+
     //Normal=1
     //Fire=2
     //Ice=3
@@ -155,7 +169,7 @@ public class Main {
     //Dark=10
     //Flying=11
 
-    public static void BeforeBattle() {
+    private static void BeforeBattle() {
 
 
         System.out.println("Choose Your Pokemon (Choose from " + Pokemon3 + ", " + Pokemon2 + " or " + Pokemon1 + " or " + Pokemon4 + "or" + Pokemon5 + "or" + Pokemon6);
