@@ -12,4 +12,6 @@ public class Charizard extends GameObject  {
         super("Charizard",250,250,"Charizard.png");
     }
 
+
+
 }

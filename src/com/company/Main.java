@@ -65,15 +65,15 @@ public class Main {
     public static String EliteMove43 = "Overheat";
     public static String EliteMove44 = "Shadow Claw";
 
-    public static String EliteMove51 = "Over Heat";
-    public static String EliteMove52 = "Flamethrower";
-    public static String EliteMove53 = "Overheat";
-    public static String EliteMove54 = "Shadow Claw";
+    public static String EliteMove51 = "Electro Ball";
+    public static String EliteMove52 = "Protect";
+    public static String EliteMove53 = "Thunder";
+    public static String EliteMove54 = "Volt Switch";
 
-    public static String EliteMove61 = "Over Heat";
-    public static String EliteMove62 = "Flamethrower";
+    public static String EliteMove61 = "Draco Meteor";
+    public static String EliteMove62 = "Earth Quake";
     public static String EliteMove63 = "Overheat";
-    public static String EliteMove64 = "Shadow Claw";
+    public static String EliteMove64 = "Dragon Claw";
 
     public static boolean Restricted1 = false;
     public static boolean Restricted2 = false;
