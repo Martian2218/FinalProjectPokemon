@@ -150,12 +150,43 @@ public class Main {
     public static int CharizardSpeed = 0;
     public static int GyaradosSpeed = 0;
     public static int TyrantrumSpeed = 0;
+
+    public static int PikachuSpD = 0;
+    public static int MmikyuSpD = 0;
+    public static int AzumarillSpD = 0;
+    public static int CharizardSpD = 0;
+    public static int GyaradosSpD = 0;
+    public static int TyrantrumSpD = 0;
+
+    public static int PikachuSpA = 0;
+    public static int MmikyuSpA = 0;
+    public static int AzumarillSpA = 156;
+    public static int CharizardSpA = 0;
+    public static int GyaradosSpA = 0;
+    public static int TyrantrumSpA = 174;
+
     public static int Elite4P1Sp = 0;
     public static int Elite4P2Sp = 0;
     public static int Elite4P3Sp = 0;
     public static int Elite4P4Sp = 0;
     public static int Elite4P5Sp = 0;
     public static int Elite4P6Sp =0;
+
+    public static int Elite4P1SpA = 0;
+    public static int Elite4P2SpA = 0;
+    public static int Elite4P3SpA = 0;
+    public static int Elite4P4SpA = 0;
+    public static int Elite4P5SpA = 0;
+    public static int Elite4P6SpA =0;
+
+    public static int Elite4P1SpD = 0;
+    public static int Elite4P2SpD = 0
+    public static int Elite4P3SpD = 0;
+    public static int Elite4P4SpD= 0;
+    public static int Elite4P5SpD= 0;
+    public static int Elite4P6SpD =0;
+
+
 
     //Normal=1
     //Fire=2
@@ -185,30 +216,41 @@ public class Main {
             UserNumber = 1;
             typex1 = 6;
             typey1 = 6;
+            PikachuSpeed = 90;
+
+
         } else if (Pokemon.equals(Pokemon2)) {
             UserNumber = 2;
             typex1 = 8;
             typey1 = 10;
+            MmikyuSpeed = 96;
+
         }
         if (Pokemon.equals(Pokemon3)) {
             typex1 = 2;
             typey1 = 11;
             UserNumber = 3;
+            AzumarillSpeed = 50;
+
         }
         if (Pokemon.equals(Pokemon4)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 4;
+            CharizardSpeed = 100;
+
         }
         if (Pokemon.equals(Pokemon5)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 5;
+            GyaradosSpeed = 81;
         }
         if (Pokemon.equals(Pokemon6)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 6;
+            TyrantrumSpeed = 71;
         }
     }
     public static void main(String[] args) {
