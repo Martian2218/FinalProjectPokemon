@@ -7,9 +7,9 @@ import edu.digipen.gameobject.GameObject;
  */
 public class Charizard2 extends GameObject
 {
-    public Charizard2()
+    public Charizard2(int X, int Y)
     {
         super("Charizard2", 200, 200, "Charizard2.png");
-        setPosition(300, 150);
+        setPosition(X, Y);
     }
 }
