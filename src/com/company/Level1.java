@@ -26,6 +26,12 @@ public class Level1 extends GameLevel {
         ObjectManager.addGameObject(ChoosePokemon);
         GameObject Mimikyu2=new Mimikyu2();
         ObjectManager.addGameObject(Mimikyu2);
+        GameObject Pikachu2=new Pikachu2();
+        ObjectManager.addGameObject(Pikachu2);
+        GameObject Charizard2=new Charizard2();
+        ObjectManager.addGameObject(Charizard2);
+        GameObject Tyrantrum2=new Tyrantrum2();
+        ObjectManager.addGameObject(Tyrantrum2);
 
 
     }

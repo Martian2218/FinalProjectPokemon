@@ -12,7 +12,7 @@ public class Main {
     public static String Pokemon2 = "Mimikyu";
     public static String Pokemon3 = "Charizard";
     public static String Pokemon4 = "Gyarados";
-    public static String Pokemon5 = "Azumaril";
+    public static String Pokemon5 = "Azumarill";
     public static String Pokemon6 = "Tyrantrum";
     public static String Elite4P1 = "Regice";
     public static String Elite4P2 = "Tapu Lele";
