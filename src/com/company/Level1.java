@@ -4,8 +4,10 @@ import edu.digipen.InputManager;
 import edu.digipen.gameobject.GameObject;
 import edu.digipen.gameobject.ObjectManager;
 import edu.digipen.level.GameLevel;
+import javafx.scene.text.Text;
 
 import javax.swing.*;
+import javax.swing.text.TextAction;
 import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
@@ -28,10 +30,12 @@ public class Level1 extends GameLevel {
         ObjectManager.addGameObject(Mimikyu2);
         GameObject Pikachu2=new Pikachu2();
         ObjectManager.addGameObject(Pikachu2);
-        GameObject Charizard2=new Charizard2();
+        GameObject Charizard2=new Charizard2(300, 150);
         ObjectManager.addGameObject(Charizard2);
         GameObject Tyrantrum2=new Tyrantrum2();
         ObjectManager.addGameObject(Tyrantrum2);
+
+
 
 
     }
