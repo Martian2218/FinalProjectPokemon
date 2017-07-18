@@ -20,8 +20,12 @@ public class Level1 extends GameLevel {
         ObjectManager.addGameObject(Background);
         GameObject Azumarill=new Azumarill();
         ObjectManager.addGameObject(Azumarill);
+        GameObject Gyarados2=new Gyarados2();
+        ObjectManager.addGameObject(Gyarados2);
         GameObject ChoosePokemon= new ChoosePokemon();
         ObjectManager.addGameObject(ChoosePokemon);
+        GameObject Mimikyu2=new Mimikyu2();
+        ObjectManager.addGameObject(Mimikyu2);
 
 
     }
