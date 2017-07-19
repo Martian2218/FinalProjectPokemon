@@ -32,7 +32,7 @@ public class Level1 extends GameLevel {
 
     @Override
     public void create() {
-
+Charizard.kill();
         ObjectManager.addGameObject(Background);
 
         ObjectManager.addGameObject(Azumarill2);
