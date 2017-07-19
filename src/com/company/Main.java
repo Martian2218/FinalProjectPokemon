@@ -45,9 +45,9 @@ public class Main {
     public static String MovePokemon63 = "Earthquake";
     public static String MovePokemon64 = "Return";
     public static String EliteMove11 = "Ice Beam";
-    public static String EliteMove12 = "Sheer Cold";
+    public static String EliteMove12 = "Blizzard";
     public static String EliteMove13 = "Giga Impact";
-    public static String EliteMove14 = "Blizzard";
+    public static String EliteMove14 = "Iron Head";
 
     public static String EliteMove21 = "Psychic";
     public static String EliteMove22 = "Moon Blast";
@@ -57,22 +57,22 @@ public class Main {
     public static String EliteMove31 = "Night Shade";
     public static String EliteMove32 = "Shadow Ball";
     public static String EliteMove33 = "Psychic";
-    public static String EliteMove34 = "Moongeist Beam";
+    public static String EliteMove34 = "Dark Pulse";
 
 
-    public static String EliteMove41 = "Over Heat";
+    public static String EliteMove41 = "Overheat";
     public static String EliteMove42 = "Flamethrower";
     public static String EliteMove43 = "Overheat";
     public static String EliteMove44 = "Shadow Claw";
 
     public static String EliteMove51 = "Electro Ball";
-    public static String EliteMove52 = "Protect";
+    public static String EliteMove52 = "Discharge";
     public static String EliteMove53 = "Thunder";
-    public static String EliteMove54 = "Volt Switch";
+    public static String EliteMove54 = "Thunderbolt";
 
-    public static String EliteMove61 = "Draco Meteor";
-    public static String EliteMove62 = "Earth Quake";
-    public static String EliteMove63 = "Overheat";
+    public static String EliteMove61 = "Dragon Pulse";
+    public static String EliteMove62 = "Earthquake";
+    public static String EliteMove63 = "Fire Blast";
     public static String EliteMove64 = "Dragon Claw";
 
     public static boolean Restricted1 = false;
