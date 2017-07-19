@@ -335,10 +335,10 @@ public class Main {
     }
 
     {
-        System.out.println("You will fight the elite 6. Screw elite 4s when you can have 6...");
 
 
-        System.out.println("You are fighting Pachira. she sends out Incineroar");
+
+        System.out.println("You are fighting Incineroar");
         typex1 = 4;
         IncineroarHP = 331;
         IncineroarAtk = 266;
@@ -347,6 +347,7 @@ public class Main {
         IncineroarSpD = 216;
         IncineroarSp = 156;
 
+        System.out.println("You are fighting the one and only legend, Tapu Lele");
         typex2 = 8;
         TapuLeleHP = 281;
         TapuLeleAtk = 175;
@@ -355,7 +356,7 @@ public class Main {
         TapuLeleSpD = 266;
         TapuLeleSpD = 226;
 
-
+        System.out.println("You are fighting freeze, Regice");
         typey1 = 3;
         RegiceHP = 301;
         RegiceAtk = 136;
@@ -364,6 +365,7 @@ public class Main {
         RegiceSpD = 436;
         RegiceSp = 136;
 
+        System.out.println("You are fighting the egyptian mummy, Cofagrigus, or however you spell it. ");
         typey2 = 12;
         CofagrigusHP = 257;
         CofagrigusAtk = 105;
@@ -372,6 +374,7 @@ public class Main {
         CofagrigusSpD = 246;
         CofagrigusSp = 96;
 
+        System.out.println("You are fighting the electrifying Rotom");
         type1 = 6;
         RotomHP = 241;
         RotomAtk = 136;
@@ -380,6 +383,7 @@ public class Main {
         RotomSpD = 190;
         RotomSp = 218;
 
+        System.out.println("You are fighting the dragon, Garchomp");
         type2 = 5;
         GarchompHP = 357;
         GarchompAtk = 296;
