@@ -28,6 +28,7 @@ public class Level1 extends GameLevel {
     GameObject Pikachu2 = new Pikachu2();
     GameObject Tyrantrum2 = new Tyrantrum2();
     GameObject Charizard2 = new Charizard2(300, 150);
+    GameObject Charizard = new Charizard();
 
     @Override
     public void create() {
@@ -110,7 +111,7 @@ public class Level1 extends GameLevel {
             ObjectManager.addGameObject(Mimikyu);
         }
         if (LeadPoke == 3) {
-            GameObject Charizard = new Charizard();
+
             ObjectManager.addGameObject(Charizard);
         }
         if (LeadPoke == 4) {
@@ -172,7 +173,7 @@ public class Level1 extends GameLevel {
         }
         if(MoveUsed=="Dragon Claw")
         {
-            Charizard.kill();
+           Charizard.kill();
         }
     }
 
