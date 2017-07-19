@@ -111,7 +111,7 @@ Charizard.kill();
             ObjectManager.addGameObject(Mimikyu);
         }
         if (LeadPoke == 3) {
-
+            GameObject Charizard=new Charizard();
             ObjectManager.addGameObject(Charizard);
         }
         if (LeadPoke == 4) {
