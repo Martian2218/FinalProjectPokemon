@@ -5,8 +5,8 @@ package com.company;
  */
 public class MoveTextCreator
 {
-    public MoveTextCreator(String MoveName, float X)
+    public MoveTextCreator(String MoveName, int X)
     {
-        SpriteText Move=new SpriteText(MoveName, 20)
+        SpriteText Move=new SpriteText(MoveName, 20, SpriteText.Alignment.CENTER, 20,X, -400);
     }
 }
