@@ -144,26 +144,47 @@ public class Main {
     public static int Speed1 = 0;
     public static int Speed2 = 0;
 
+    public static int PikachuHP = 0;
+    public static int MimikyuHP = 0;
+    public static int AzumarillHP = 0;
+    public static int CharizardHP = 0;
+    public static int GyaradosHP = 0;
+    public static int TyrantrumHP = 0;
+
+    public static int PikachuAtk = 0;
+    public static int MimikyuAtk = 0;
+    public static int AzumarillAtk = 0;
+    public static int CharizardAtk = 0;
+    public static int GyaradosAtk = 0;
+    public static int TyrantrumAtk = 0;
+
+    public static int PikachuD = 0;
+    public static int MimikyuD = 0;
+    public static int AzumarillD = 0;
+    public static int CharizardD = 0;
+    public static int GyaradosD = 0;
+    public static int TyrantrumD = 0;
+
     public static int PikachuSpeed = 0;
-    public static int MmikyuSpeed = 0;
+    public static int MimikyuSpeed = 0;
     public static int AzumarillSpeed = 0;
     public static int CharizardSpeed = 0;
     public static int GyaradosSpeed = 0;
     public static int TyrantrumSpeed = 0;
 
     public static int PikachuSpD = 0;
-    public static int MmikyuSpD = 0;
+    public static int MimikyuSpD = 0;
     public static int AzumarillSpD = 0;
     public static int CharizardSpD = 0;
     public static int GyaradosSpD = 0;
     public static int TyrantrumSpD = 0;
 
     public static int PikachuSpA = 0;
-    public static int MmikyuSpA = 0;
-    public static int AzumarillSpA = 156;
+    public static int MimikyuSpA = 0;
+    public static int AzumarillSpA = 0;
     public static int CharizardSpA = 0;
     public static int GyaradosSpA = 0;
-    public static int TyrantrumSpA = 174;
+    public static int TyrantrumSpA = 0;
 
     public static int Elite4P1Sp = 0;
     public static int Elite4P2Sp = 0;
@@ -180,7 +201,7 @@ public class Main {
     public static int Elite4P6SpA =0;
 
     public static int Elite4P1SpD = 0;
-    public static int Elite4P2SpD = 0
+    public static int Elite4P2SpD = 0;
     public static int Elite4P3SpD = 0;
     public static int Elite4P4SpD= 0;
     public static int Elite4P5SpD= 0;
@@ -216,43 +237,87 @@ public class Main {
             UserNumber = 1;
             typex1 = 6;
             typey1 = 6;
+            PikachuHP = 211;
+            PikachuAtk = 146 ;
+            PikachuD = 116;
             PikachuSpeed = 90;
+            PikachuSpA = 136;
+            PikachuSpD = 136;
 
 
         } else if (Pokemon.equals(Pokemon2)) {
             UserNumber = 2;
             typex1 = 8;
             typey1 = 10;
-            MmikyuSpeed = 96;
+            MimikyuHP = 251;
+            MimikyuAtk = 216;
+            MimikyuD = 196;
+            MimikyuSpeed = 228;
+            MimikyuSpD = 136;
+            MimikyuSpA =  246;
+
 
         }
         if (Pokemon.equals(Pokemon3)) {
             typex1 = 2;
             typey1 = 11;
             UserNumber = 3;
-            AzumarillSpeed = 50;
+            AzumarillHP =305;
+            AzumarillAtk= 278;
+            AzumarillD =274;
+            AzumarillSpeed = 156;
+            AzumarillSpA = 196;
+            AzumarillSpD = 136;
 
         }
         if (Pokemon.equals(Pokemon4)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 4;
-            CharizardSpeed = 100;
+            CharizardHP = 297;
+            CharizardAtk = 297;
+            CharizardD = 173;
+            CharizardSpeed = 254;
+            CharizardSpD = 206;
+            CharizardSpA = 236;
 
         }
         if (Pokemon.equals(Pokemon5)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 5;
-            GyaradosSpeed = 81;
+            GyaradosHP = 331;
+            GyaradosAtk = 286;
+            GyaradosD = 194;
+            GyaradosSpeed = 156;
+            GyaradosSpD = 236;
+            GyaradosSpA = 198;
         }
         if (Pokemon.equals(Pokemon6)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 6;
-            TyrantrumSpeed = 71;
+            TyrantrumHP =305;
+            TyrantrumAtk = 278;
+            TyrantrumD = 274;
+            TyrantrumSpeed = 178;
+            TyrantrumSpA = 174;
+            TyrantrumSpD = 154;
         }
     }
+    {
+        System.out.println("You will fight the elite 6. Screw elite 4s when you can have 6...");
+        Random rand = new Random();
+        int roll = rand.nextInt(5);
+
+        if (roll == 0);{
+        System.out.println("You are fighting Pachira. she sends out ");
+    }
+
+
+
+    }
+
     public static void main(String[] args) {
         Game.initialize(1000, 750, 60, new Level1());
 
