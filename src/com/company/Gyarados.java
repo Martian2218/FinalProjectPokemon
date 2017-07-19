@@ -9,8 +9,8 @@ public class Gyarados extends GameObject  {
 
         public Gyarados()
         {
-            super("Gyarados",175,175,"Gyarados.png");
-
+            super("Gyarados",450,450,"Gyarados.png");
+            setPosition(-150, -100);
         }
 
 }

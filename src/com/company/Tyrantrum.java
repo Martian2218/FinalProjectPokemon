@@ -5,11 +5,11 @@ import edu.digipen.gameobject.GameObject;
 /**
  * Created by yuuki.sawanoi on 7/19/2017.
  */
-public class Azumarill extends GameObject
+public class Tyrantrum extends GameObject
 {
-    public Azumarill()
+    public Tyrantrum()
     {
-        super("Azumarill", 450,450, "Azumarill.png");
+        super("Tyrantrum", 450,450, "Tyrantrum.png");
         setPosition(-150, -100);
     }
 }

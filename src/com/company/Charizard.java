@@ -9,7 +9,8 @@ public class Charizard extends GameObject  {
 
     public Charizard()
     {
-        super("Charizard",250,250,"Charizard.png");
+        super("Charizard",400,400,"Charizard.png");
+        setPosition(-175, -125);
     }
 
 

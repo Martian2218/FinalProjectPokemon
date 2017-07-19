@@ -39,11 +39,11 @@ public class Main {
     public static String MovePokemon51 = "Aqua Tail";
     public static String MovePokemon52 = "Blizzard";
     public static String MovePokemon53 = "Ice Beam";
-    public static String MovePokemon54 = "Hurricane";
+    public static String MovePokemon54 = "Hydro Pump";
     public static String MovePokemon61 = "Dragon Pulse";
-    public static String MovePokemon62 = "Hydro Pump";
-    public static String MovePokemon63 = "Ice Beam";
-    public static String MovePokemon64 = "Hurricane";
+    public static String MovePokemon62 = "Earth Power";
+    public static String MovePokemon63 = "Earthquake";
+    public static String MovePokemon64 = "Return";
     public static String EliteMove11 = "Ice Beam";
     public static String EliteMove12 = "Sheer Cold";
     public static String EliteMove13 = "Giga Impact";
@@ -180,7 +180,7 @@ public class Main {
     public static int Elite4P6SpA =0;
 
     public static int Elite4P1SpD = 0;
-    public static int Elite4P2SpD = 0
+    public static int Elite4P2SpD = 0;
     public static int Elite4P3SpD = 0;
     public static int Elite4P4SpD= 0;
     public static int Elite4P5SpD= 0;

@@ -9,7 +9,8 @@ public class Pikachu extends GameObject {
 
         public Pikachu()
         {
-            super("Pikachu",250,250,"Pikachu.png");
+            super("Pikachu",450,450,"Pikachu.png");
+            setPosition(-150, -100);
         }
 
     }

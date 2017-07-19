@@ -9,7 +9,8 @@ public class Mimikyu extends GameObject {
 
     public Mimikyu()
     {
-        super("Mimikyu",250,250,"Mimikyu.png");
+        super("Mimikyu",450,450,"Mimikyu.png");
+        setPosition(-150, -100);
     }
 
 }
