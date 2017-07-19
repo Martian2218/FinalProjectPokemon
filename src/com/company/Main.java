@@ -186,27 +186,54 @@ public class Main {
     public static int GyaradosSpA = 0;
     public static int TyrantrumSpA = 0;
 
-    public static int Elite4P1Sp = 0;
-    public static int Elite4P2Sp = 0;
-    public static int Elite4P3Sp = 0;
-    public static int Elite4P4Sp = 0;
-    public static int Elite4P5Sp = 0;
-    public static int Elite4P6Sp =0;
+    public static String Regice;
+    public static String TapuLele;
+    public static String Cofagrigus;
+    public static String Incineroar;
+    public static String Rotom;
+    public static String Garchomp;
 
-    public static int Elite4P1SpA = 0;
-    public static int Elite4P2SpA = 0;
-    public static int Elite4P3SpA = 0;
-    public static int Elite4P4SpA = 0;
-    public static int Elite4P5SpA = 0;
-    public static int Elite4P6SpA =0;
+    public static int RegiceHP = 0;
+    public static int TapuLeleHP = 0;
+    public static int CofagrigusHP = 0;
+    public static int IncineroarHP = 0;
+    public static int RotomHP = 0;
+    public static int GarchompHP = 0;
 
-    public static int Elite4P1SpD = 0;
-    public static int Elite4P2SpD = 0;
-    public static int Elite4P3SpD = 0;
-    public static int Elite4P4SpD= 0;
-    public static int Elite4P5SpD= 0;
-    public static int Elite4P6SpD =0;
+    public static int RegiceAtk = 0;
+    public static int TapuLeleAtk = 0;
+    public static int CofagrigusAtk = 0;
+    public static int IncineroarAtk = 0;
+    public static int RotomAtk = 0;
+    public static int GarchompAtk = 0;
 
+    public static int RegiceD = 0;
+    public static int TapuLeleD = 0;
+    public static int CofagrigusD = 0;
+    public static int IncineroarD = 0;
+    public static int RotomD = 0;
+    public static int GarchompD = 0;
+
+    public static int RegiceSp = 0;
+    public static int TapuLeleSp = 0;
+    public static int CofagrigusSp = 0;
+    public static int IncineroarSp = 0;
+    public static int RotomSp = 0;
+    public static int GarchompSp = 0;
+
+    public static int RegiceSpA = 0;
+    public static int TapuLeleSpA = 0;
+    public static int CofagrigusSpA = 0;
+    public static int IncineroarSpA = 0;
+    public static int RotomSpA = 0;
+    public static int GarchompSpA = 0;
+
+    public static int RegiceSpD = 0;
+    public static int TapuLeleSpD = 0;
+    public static int CofagrigusSpD = 0;
+    public static int IncineroarSpD = 0;
+    public static int RotomSpD = 0;
+    public static int GarchompSpD = 0;
 
 
     //Normal=1
@@ -220,6 +247,7 @@ public class Main {
     //Poison=9
     //Dark=10
     //Flying=11
+    //Ghost = 12
 
     private static void BeforeBattle() {
 
@@ -236,9 +264,9 @@ public class Main {
         if (Pokemon.equals(Pokemon1)) {
             UserNumber = 1;
             typex1 = 6;
-            typey1 = 6;
+
             PikachuHP = 211;
-            PikachuAtk = 146 ;
+            PikachuAtk = 146;
             PikachuD = 116;
             PikachuSpeed = 90;
             PikachuSpA = 136;
@@ -254,7 +282,7 @@ public class Main {
             MimikyuD = 196;
             MimikyuSpeed = 228;
             MimikyuSpD = 136;
-            MimikyuSpA =  246;
+            MimikyuSpA = 246;
 
 
         }
@@ -262,9 +290,9 @@ public class Main {
             typex1 = 2;
             typey1 = 11;
             UserNumber = 3;
-            AzumarillHP =305;
-            AzumarillAtk= 278;
-            AzumarillD =274;
+            AzumarillHP = 305;
+            AzumarillAtk = 278;
+            AzumarillD = 274;
             AzumarillSpeed = 156;
             AzumarillSpA = 196;
             AzumarillSpD = 136;
@@ -297,7 +325,7 @@ public class Main {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 6;
-            TyrantrumHP =305;
+            TyrantrumHP = 305;
             TyrantrumAtk = 278;
             TyrantrumD = 274;
             TyrantrumSpeed = 178;
@@ -305,18 +333,67 @@ public class Main {
             TyrantrumSpD = 154;
         }
     }
+
     {
         System.out.println("You will fight the elite 6. Screw elite 4s when you can have 6...");
-        Random rand = new Random();
-        int roll = rand.nextInt(5);
 
-        if (roll == 0);{
-        System.out.println("You are fighting Pachira. she sends out ");
+
+        System.out.println("You are fighting Pachira. she sends out Incineroar");
+        typex1 = 4;
+        IncineroarHP = 331;
+        IncineroarAtk = 266;
+        IncineroarD = 216;
+        IncineroarSpA = 196;
+        IncineroarSpD = 216;
+        IncineroarSp = 156;
+
+        typex2 = 8;
+        TapuLeleHP = 281;
+        TapuLeleAtk = 175;
+        TapuLeleD = 186;
+        TapuLeleSpA = 296;
+        TapuLeleSpD = 266;
+        TapuLeleSpD = 226;
+
+
+        typey1 = 3;
+        RegiceHP = 301;
+        RegiceAtk = 136;
+        RegiceD = 236;
+        RegiceSpA = 236;
+        RegiceSpD = 436;
+        RegiceSp = 136;
+
+        typey2 = 12;
+        CofagrigusHP = 257;
+        CofagrigusAtk = 105;
+        CofagrigusD = 326;
+        CofagrigusSpA = 226;
+        CofagrigusSpD = 246;
+        CofagrigusSp = 96;
+
+        type1 = 6;
+        RotomHP = 241;
+        RotomAtk = 136;
+        RotomD = 190;
+        RotomSpA = 226;
+        RotomSpD = 190;
+        RotomSp = 218;
+
+        type2 = 5;
+        GarchompHP = 357;
+        GarchompAtk = 296;
+        GarchompD = 226;
+        GarchompSpA = 196;
+        GarchompSpD = 206;
+        GarchompSp = 240;
     }
 
 
 
-    }
+
+
+
 
     public static void main(String[] args) {
         Game.initialize(1000, 750, 60, new Level1());
