@@ -17,9 +17,9 @@ public class DamageCalculation {
         int Z = rand.nextInt(38) + 217;
         Damage = 2 * A;
         Damage /= 5;
-        Damage += 2;
         Damage *= B * C;
         Damage /= D;
+        Damage += 2;
         Damage /= 50;
         Damage += 2;
         Damage *= X * Y;
