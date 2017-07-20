@@ -152,98 +152,78 @@ public class Main {
     public static int Speed1 = 0;
     public static int Speed2 = 0;
 
-    public static int PikachuHP = 0;
-    public static int MimikyuHP = 0;
-    public static int AzumarillHP = 0;
-    public static int CharizardHP = 0;
-    public static int GyaradosHP = 0;
-    public static int TyrantrumHP = 0;
 
-    public static int PikachuAtk = 0;
-    public static int MimikyuAtk = 0;
-    public static int AzumarillAtk = 0;
-    public static int CharizardAtk = 0;
-    public static int GyaradosAtk = 0;
-    public static int TyrantrumAtk = 0;
-
-    public static int PikachuD = 0;
-    public static int MimikyuD = 0;
-    public static int AzumarillD = 0;
-    public static int CharizardD = 0;
-    public static int GyaradosD = 0;
-    public static int TyrantrumD = 0;
-
-    public static int PikachuSpeed = 0;
-    public static int MimikyuSpeed = 0;
-    public static int AzumarillSpeed = 0;
-    public static int CharizardSpeed = 0;
-    public static int GyaradosSpeed = 0;
-    public static int TyrantrumSpeed = 0;
-
-    public static int PikachuSpD = 0;
-    public static int MimikyuSpD = 0;
-    public static int AzumarillSpD = 0;
-    public static int CharizardSpD = 0;
-    public static int GyaradosSpD = 0;
-    public static int TyrantrumSpD = 0;
-
-    public static int PikachuSpA = 0;
-    public static int MimikyuSpA = 0;
-    public static int AzumarillSpA = 0;
-    public static int CharizardSpA = 0;
-    public static int GyaradosSpA = 0;
-    public static int TyrantrumSpA = 0;
-
-    public static String Regice;
-    public static String TapuLele;
-    public static String Cofagrigus;
-    public static String Incineroar;
-    public static String Rotom;
-    public static String Garchomp;
-
-    public static int RegiceHP = 0;
-    public static int TapuLeleHP = 0;
-    public static int CofagrigusHP = 0;
-    public static int IncineroarHP = 0;
-    public static int RotomHP = 0;
-    public static int GarchompHP = 0;
-
-    public static int RegiceAtk = 0;
-    public static int TapuLeleAtk = 0;
-    public static int CofagrigusAtk = 0;
-    public static int IncineroarAtk = 0;
-    public static int RotomAtk = 0;
-    public static int GarchompAtk = 0;
-
-    public static int RegiceD = 0;
-    public static int TapuLeleD = 0;
-    public static int CofagrigusD = 0;
-    public static int IncineroarD = 0;
-    public static int RotomD = 0;
-    public static int GarchompD = 0;
-
-    public static int RegiceSp = 0;
-    public static int TapuLeleSp = 0;
-    public static int CofagrigusSp = 0;
-    public static int IncineroarSp = 0;
-    public static int RotomSp = 0;
-    public static int GarchompSp = 0;
-
-    public static int RegiceSpA = 0;
-    public static int TapuLeleSpA = 0;
-    public static int CofagrigusSpA = 0;
-    public static int IncineroarSpA = 0;
-    public static int RotomSpA = 0;
-    public static int GarchompSpA = 0;
-
-    public static int RegiceSpD = 0;
-    public static int TapuLeleSpD = 0;
-    public static int CofagrigusSpD = 0;
-    public static int IncineroarSpD = 0;
-    public static int RotomSpD = 0;
-    public static int GarchompSpD = 0;
-
-
+    public static int PikachuHP = 211;
+    public static int PikachuAtk = 146;
+    public static int PikachuD = 116;
+    public static int PikachuSpeed = 90;
+    public static int PikachuSpA = 136;
+    public static int PikachuSpD = 136;
+    public static int MimikyuHP = 251;
+    public static int MimikyuAtk = 216;
+    public static int MimikyuD = 196;
+    public static int MimikyuSpeed = 228;
+    public static int MimikyuSpD = 136;
+    public static int MimikyuSpA = 246;
+    public static int AzumarillHP = 305;
+    public static int AzumarillAtk = 278;
+    public static int AzumarillD = 274;
+    public static int AzumarillSpeed = 156;
+    public static int AzumarillSpA = 196;
+    public static int AzumarillSpD = 136;
+    public static int CharizardHP = 297;
+    public static int CharizardAtk = 297;
+    public static int CharizardD = 173;
+    public static int CharizardSpeed = 254;
+    public static int CharizardSpD = 206;
+    public static int CharizardSpA = 236;
+    public static int GyaradosHP = 331;
+    public static int GyaradosAtk = 286;
+    public static int GyaradosD = 194;
+    public static int GyaradosSpeed = 156;
+    public static int GyaradosSpD = 236;
+    public static int GyaradosSpA = 198;
+    public static int TyrantrumHP = 305;
+    public static int TyrantrumAtk = 278;
+    public static int TyrantrumD = 274;
+    public static int TyrantrumSpeed = 178;
+    public static int TyrantrumSpA = 174;
+    public static int TyrantrumSpD = 154;
+    public static int IncineroarHP = 331;
+    public static int IncineroarAtk = 266;
+    public static int IncineroarD = 216;
+    public static int IncineroarSpA = 196;
+    public static int IncineroarSpD = 216;
+    public static int IncineroarSp = 156;
+    public static int TapuLeleHP = 281;
+    public static int TapuLeleAtk = 175;
+    public static int TapuLeleD = 186;
+    public static int TapuLeleSpA = 296;
+    public static int TapuLeleSpD = 266;
+    public static int RegiceHP = 301;
+    public static int RegiceAtk = 136;
+    public static int RegiceD = 236;
+    public static int RegiceSpA = 236;
+    public static int RegiceSpD = 436;
+    public static int RegiceSp = 136;
+    public static int CofagrigusHP = 257;
+    public static int CofagrigusAtk = 105;
+    public static int CofagrigusD = 326;
+    public static int CofagrigusSpA = 226;
+    public static int CofagrigusSpD = 246;
+    public static int CofagrigusSp = 96;
+    public static int RotomHP = 241;
+    public static int RotomAtk = 136;
+    public static int RotomD = 190;
+    public static int RotomSpA = 226;
+    public static int RotomSpD = 190;
+    public static int RotomSp = 218;
+    public static int GarchompHP = 357;
+    public static int GarchompAtk = 296;
+    public static int GarchompD = 226;
+    public static int GarchompSpA = 196;
+    public static int GarchompSpD = 206;
+    public static int GarchompSp = 240;
     //Normal=1
     //Fire=2
     //Ice=3
@@ -273,24 +253,12 @@ public class Main {
             UserNumber = 1;
             typex1 = 6;
 
-            PikachuHP = 211;
-            PikachuAtk = 146;
-            PikachuD = 116;
-            PikachuSpeed = 90;
-            PikachuSpA = 136;
-            PikachuSpD = 136;
-
 
         } else if (Pokemon.equals(Pokemon2)) {
             UserNumber = 2;
             typex1 = 8;
             typey1 = 10;
-            MimikyuHP = 251;
-            MimikyuAtk = 216;
-            MimikyuD = 196;
-            MimikyuSpeed = 228;
-            MimikyuSpD = 136;
-            MimikyuSpA = 246;
+
 
 
         }
@@ -298,47 +266,27 @@ public class Main {
             typex1 = 2;
             typey1 = 11;
             UserNumber = 3;
-            AzumarillHP = 305;
-            AzumarillAtk = 278;
-            AzumarillD = 274;
-            AzumarillSpeed = 156;
-            AzumarillSpA = 196;
-            AzumarillSpD = 136;
+
 
         }
         if (Pokemon.equals(Pokemon4)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 4;
-            CharizardHP = 297;
-            CharizardAtk = 297;
-            CharizardD = 173;
-            CharizardSpeed = 254;
-            CharizardSpD = 206;
-            CharizardSpA = 236;
+
 
         }
         if (Pokemon.equals(Pokemon5)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 5;
-            GyaradosHP = 331;
-            GyaradosAtk = 286;
-            GyaradosD = 194;
-            GyaradosSpeed = 156;
-            GyaradosSpD = 236;
-            GyaradosSpA = 198;
+
         }
         if (Pokemon.equals(Pokemon6)) {
             typex1 = 4;
             typey1 = 11;
             UserNumber = 6;
-            TyrantrumHP = 305;
-            TyrantrumAtk = 278;
-            TyrantrumD = 274;
-            TyrantrumSpeed = 178;
-            TyrantrumSpA = 174;
-            TyrantrumSpD = 154;
+
         }
     }
 
@@ -348,57 +296,27 @@ public class Main {
 
         System.out.println("You are fighting Incineroar");
         typex1 = 4;
-        IncineroarHP = 331;
-        IncineroarAtk = 266;
-        IncineroarD = 216;
-        IncineroarSpA = 196;
-        IncineroarSpD = 216;
-        IncineroarSp = 156;
+
 
         System.out.println("You are fighting the one and only legend, Tapu Lele");
         typex2 = 8;
-        TapuLeleHP = 281;
-        TapuLeleAtk = 175;
-        TapuLeleD = 186;
-        TapuLeleSpA = 296;
-        TapuLeleSpD = 266;
-        TapuLeleSpD = 226;
+
 
         System.out.println("You are fighting freeze, Regice");
         typey1 = 3;
-        RegiceHP = 301;
-        RegiceAtk = 136;
-        RegiceD = 236;
-        RegiceSpA = 236;
-        RegiceSpD = 436;
-        RegiceSp = 136;
+
 
         System.out.println("You are fighting the egyptian mummy, Cofagrigus, or however you spell it. ");
         typey2 = 12;
-        CofagrigusHP = 257;
-        CofagrigusAtk = 105;
-        CofagrigusD = 326;
-        CofagrigusSpA = 226;
-        CofagrigusSpD = 246;
-        CofagrigusSp = 96;
+
 
         System.out.println("You are fighting the electrifying Rotom");
         type1 = 6;
-        RotomHP = 241;
-        RotomAtk = 136;
-        RotomD = 190;
-        RotomSpA = 226;
-        RotomSpD = 190;
-        RotomSp = 218;
+
 
         System.out.println("You are fighting the dragon, Garchomp");
         type2 = 5;
-        GarchompHP = 357;
-        GarchompAtk = 296;
-        GarchompD = 226;
-        GarchompSpA = 196;
-        GarchompSpD = 206;
-        GarchompSp = 240;
+
     }
 
 

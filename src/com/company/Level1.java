@@ -189,6 +189,12 @@ public class Level1 extends GameLevel {
                 MoveUsed = "Fire Spin";
 
             }
+            if (InputManager.getMousePosition().getX() > 829 && InputManager.getMousePosition().getX() < 969 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
+                System.out.println("Hyper Beam");
+                MoveChosen = true;
+                MoveUsed = "Hyper Beam";
+
+            }
             if (MoveUsed.equals("Dragon Claw")) {
                 Charizard.kill();
                 GameObject CharizardDragClaw = new CharizardDragonClaw();
@@ -204,13 +210,49 @@ public class Level1 extends GameLevel {
             {
                 GameObject CharToxic = new CharToxic();
                 ObjectManager.addGameObject(CharToxic);
+
+
+                    Main.type1 = 9;
+                    Main.ChanceP = 100;
+                    ExtraCode.ChanceSP(Main.Pokemon3);
+                    if (Main.ystatus == false) {
+                        if (Main.Hit1) {
+                            Main.Poisoned2 = true;
+                            Main.status2 = 5;
+                            Main.Damage2M = 10;
+                        }
+                    } else {
+                        Main.Hit1 = false;
+                    }
+                }
                 MoveUsed = "";
                 animated = true;
+
             }
             if(MoveUsed.equals("Fire Spin"))
             {
                 GameObject CharFS = new CharFS();
                 ObjectManager.addGameObject(CharFS);
+                if (Main.user.equals(Main.Pokemon3)) {
+                    Main.ChanceP = 100;
+                    Main.type1 = 2;
+                    Main. xHit1 = 3;
+                    Main.yHit1 = 3;
+                    Main.Damage2M = 20;
+                } else if (Main.Opponent.equals(Main.Pokemon3)) {
+                    Main.ChanceM = 100;
+                    Main.type2 = 2;
+                    Main.xHit2 = 3;
+                    Main.yHit2 = 3;
+                    Main.Damage2P = 20;
+                }
+                MoveUsed = "";
+                animated = true;
+            }
+            if(MoveUsed.equals("Hyper Beam"))
+            {
+                GameObject CharHB = new CharHB();
+                ObjectManager.addGameObject(CharHB);
                 MoveUsed = "";
                 animated = true;
             }
@@ -218,6 +260,7 @@ public class Level1 extends GameLevel {
             {
                 System.out.println(InputManager.getMousePosition());
             }
+
         }
         // label.Change("New Text");
 
@@ -225,7 +268,7 @@ public class Level1 extends GameLevel {
         {
             System.out.println(InputManager.getMousePosition());
         }*/
-    }
+
 
     @Override
     public void uninitialize() {

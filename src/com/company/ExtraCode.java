@@ -432,99 +432,13 @@ public class ExtraCode {
 
     }
 
-    public static void HyperBeam() {
 
 
-        if (user.equals(Pokemon3)) {
-            ChanceP = 100;
-            type1 = 1;
-            if (wasDis1 == true) {
-                Disabled1 = false;
-                wasDis1 = false;
-            } else {
-                Disabled1 = true;
-                wasDis1 = true;
-                Damage2M = 140;
-
-            }
-        } else if (Opponent.equals(Pokemon3)) {
-            ChanceM = 100;
-            type2 = 1;
-            if (wasDis2 == true) {
-                Disabled2 = false;
-            } else {
-                Disabled2 = true;
-                wasDis2 = true;
-                Damage2P = 140;
-            }
-
-        }
-
-    }
-
-    public static void FireSpin() {
 
 
-        if (user.equals(Pokemon3)) {
-            ChanceP = 100;
-            type1 = 2;
-            xHit1 = 3;
-            yHit1 = 3;
-            Damage2M = 20;
-        } else if (Opponent.equals(Pokemon3)) {
-            ChanceM = 100;
-            type2 = 2;
-            xHit2 = 3;
-            yHit2 = 3;
-            Damage2P = 20;
-        }
-
-    }
-
-    public static void Toxic() {
-        if (user.equals(Pokemon3)) {
-            type1 = 9;
-            ChanceP = 100;
-            ChanceSP(Pokemon3);
-            if (ystatus == false) {
-                if (Hit1) {
-                    Poisoned2 = true;
-                    status2 = 5;
-                    Damage2M = 10;
-                }
-            } else {
-                Hit1 = false;
-            }
-        } else if (Opponent.equals(Pokemon3)) {
-            type2 = 9;
-            ChanceM = 100;
-            ChanceSP(Pokemon3);
-            if (xstatus == false) {
-                if (Hit2) {
-                    Poisoned1 = true;
-                    status1 = 5;
-                    Damage2P = 10;
-                }
-            } else {
-                Hit2 = false;
-            }
-        }
-
-    }
-
-    public static void DragonClaw() {
-        if (user.equals(Pokemon3)) {
-            ChanceP = 100;
-            type1 = 5;
-            Damage2M = 80;
-        } else if (Opponent.equals(Pokemon3)) {
-            ChanceM = 100;
-            type2 = 5;
-            Damage2P = 80;
-        }
 
 
-    }
+
 
     public static void Facade() {
         if (user.equals(Pokemon1)) {
@@ -693,20 +607,20 @@ public class ExtraCode {
         }
         if (Pokemon.equals(Pokemon3)) {
             if (move == 1) {
-                HyperBeam();
+                //HyperBeam();
                 MoveUsed2 = MovePokemon31;
             }
             if (move == 2) {
-                FireSpin();
+              //  FireSpin();
                 MoveUsed2 = MovePokemon32;
             }
             if (move == 3) {
                 //  Chance();
-                Toxic();
+              //  Toxic();
                 MoveUsed2 = MovePokemon33;
             }
             if (move == 4) {
-                DragonClaw();
+              //  DragonClaw();
                 MoveUsed2 = MovePokemon34;
             }
         }
@@ -795,20 +709,20 @@ public class ExtraCode {
             }
 
             if (Move.equals(MovePokemon31)) {
-                HyperBeam();
+             //   HyperBeam();
                 MoveUsed = MovePokemon31;
             }
             if (Move.equals(MovePokemon32)) {
-                FireSpin();
+             //   FireSpin();
                 MoveUsed = MovePokemon32;
             }
             if (Move.equals(MovePokemon33)) {
 
-                Toxic();
+             //   Toxic();
                 MoveUsed = MovePokemon33;
             }
             if (Move.equals(MovePokemon34)) {
-                DragonClaw();
+              //  DragonClaw();
                 MoveUsed = MovePokemon34;
             }
 

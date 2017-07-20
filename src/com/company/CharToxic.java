@@ -32,4 +32,8 @@ public class CharToxic extends GameObject
             Level1.animated = false;
         }
     }
-}
+
+        }
+
+
+

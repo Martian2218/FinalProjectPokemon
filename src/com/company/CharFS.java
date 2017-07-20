@@ -30,4 +30,10 @@ public class CharFS extends GameObject
             Level1.animated = false;
         }
     }
+
+
+
+
+
+
 }
