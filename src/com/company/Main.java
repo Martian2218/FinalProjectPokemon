@@ -10,7 +10,7 @@ public class Main {
     public static Scanner consoleInput = new Scanner(System.in);
     public static String Pokemon1 = "Pikachu";
     public static String Pokemon2 = "Mimikyu";
-    public static String Pokemon3 = "Charizard";
+    public static String Pokemon3 = "Charizard3";
     public static String Pokemon4 = "Gyarados";
     public static String Pokemon5 = "Azumarill";
     public static String Pokemon6 = "Tyrantrum";

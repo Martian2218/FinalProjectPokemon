@@ -11,7 +11,7 @@ public class ExtraCode {
     public static Scanner consoleInput = new Scanner(System.in);
     public static String Pokemon1 = "Pikachu";
     public static String Pokemon2 = "Mimikyu";
-    public static String Pokemon3 = "Charizard";
+    public static String Pokemon3 = "Charizard3";
     public static String Pokemon4 = "Gyarados";
     public static String Elite4P1 = "Regice";
     public static String Elite4P2 = "Tapu Lele";
