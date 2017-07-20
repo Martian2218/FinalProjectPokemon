@@ -20,30 +20,38 @@ public class Main {
     public static String Elite4P4 = "Incineroar";
     public static String Elite4P5 = "Rotom";
     public static String Elite4P6 = "Garchomp";
+
     public static String MovePokemon11 = "Iron Tail";
     public static String MovePokemon12 = "Thunderbolt";
     public static String MovePokemon13 = "Electro Ball";
     public static String MovePokemon14 = "Quick Attack";
+
     public static String MovePokemon21 = "Shadow Sneak";
     public static String MovePokemon22 = "Shadow Claw";
     public static String MovePokemon23 = "Shadow Ball";
     public static String MovePokemon24 = "Play Rough";
+
     public static String MovePokemon31 = "Hyper Beam";
     public static String MovePokemon32 = "Fire Spin";
     public static String MovePokemon33 = "Toxic";
     public static String MovePokemon34 = "Dragon Claw";
+
     public static String MovePokemon41 = "Dragon Pulse";
     public static String MovePokemon42 = "Hydro Pump";
     public static String MovePokemon43 = "Ice Beam";
     public static String MovePokemon44 = "Hurricane";
+
     public static String MovePokemon51 = "Aqua Tail";
     public static String MovePokemon52 = "Blizzard";
     public static String MovePokemon53 = "Ice Beam";
     public static String MovePokemon54 = "Hydro Pump";
+
     public static String MovePokemon61 = "Dragon Pulse";
     public static String MovePokemon62 = "Earth Power";
     public static String MovePokemon63 = "Earthquake";
     public static String MovePokemon64 = "Return";
+
+
     public static String EliteMove11 = "Ice Beam";
     public static String EliteMove12 = "Blizzard";
     public static String EliteMove13 = "Giga Impact";
@@ -52,7 +60,7 @@ public class Main {
     public static String EliteMove21 = "Psychic";
     public static String EliteMove22 = "Moon Blast";
     public static String EliteMove23 = "Psyshock";
-    public static String EliteMove24 = "Hidden Power (Fire)";
+    public static String EliteMove24 = "Hidden Power";
 
     public static String EliteMove31 = "Night Shade";
     public static String EliteMove32 = "Shadow Ball";
@@ -62,7 +70,7 @@ public class Main {
 
     public static String EliteMove41 = "Overheat";
     public static String EliteMove42 = "Flamethrower";
-    public static String EliteMove43 = "Overheat";
+    public static String EliteMove43 = "Fire Blast";
     public static String EliteMove44 = "Shadow Claw";
 
     public static String EliteMove51 = "Electro Ball";
