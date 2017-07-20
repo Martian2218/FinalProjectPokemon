@@ -30,33 +30,9 @@ public class CharHB extends GameObject
         }
     }
 
-    public static void HyperBeam() {
 
 
-        if (Main.user.equals(Main.Pokemon3)) {
-            Main.ChanceP = 100;
-            Main.type1 = 1;
-            if (Main.wasDis1 == true) {
-                Main.Disabled1 = false;
-                Main.wasDis1 = false;
-            } else {
-                Main.Disabled1 = true;
-                Main.wasDis1 = true;
-                Main.Damage2M = 140;
 
-            }
-        } else if (Main.Opponent.equals(Main.Pokemon3)) {
-            Main.ChanceM = 100;
-            Main.type2 = 1;
-            if (Main.wasDis2 == true) {
-                Main.Disabled2 = false;
-            } else {
-                Main.Disabled2 = true;
-                Main.wasDis2 = true;
-                Main.Damage2P = 140;
-            }
 
-        }
 
-    }
 }

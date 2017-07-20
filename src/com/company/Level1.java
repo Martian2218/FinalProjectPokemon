@@ -253,9 +253,44 @@ public class Level1 extends GameLevel {
             {
                 GameObject CharHB = new CharHB();
                 ObjectManager.addGameObject(CharHB);
+                if (Main.user.equals(Main.Pokemon3)) {
+                    Main.ChanceP = 100;
+                    Main.type1 = 1;
+                    if (Main.wasDis1 == true) {
+                        Main.Disabled1 = false;
+                        Main.wasDis1 = false;
+                    } else {
+                        Main.Disabled1 = true;
+                        Main.wasDis1 = true;
+                        Main.Damage2M = 140;
+
+                    }
+                } else if (Main.Opponent.equals(Main.Pokemon3))
+
+                {
+                    Main.ChanceM = 100;
+                    Main.type2 = 1;
+                    if (Main.wasDis2 == true) {
+                        Main.Disabled2 = false;
+                    } else {
+                        Main.Disabled2 = true;
+                        Main.wasDis2 = true;
+                        Main.Damage2P = 140;
+                    }
+
+                }
                 MoveUsed = "";
                 animated = true;
             }
+        int OpponentMove=rand.nextInt(3)+1;
+        if(OpponentMove==1)
+        {
+            Main.MoveUsed2="Psychic";
+        }
+        if (OpponentMove==2)
+        {
+            Main.MoveUsed2="Moon Blast";
+        }
             if(InputManager.isMouseButtonTriggered(0))
             {
                 System.out.println(InputManager.getMousePosition());
