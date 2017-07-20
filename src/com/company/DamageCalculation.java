@@ -26,10 +26,9 @@ public class DamageCalculation {
         Damage /= 10;
         Damage *= Z;
         Damage /= 255;
+    return Damage;
 
 
-
-            return Damage;
     }
 }
 
