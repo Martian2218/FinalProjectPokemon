@@ -3,24 +3,24 @@ package com.company;
 import edu.digipen.gameobject.GameObject;
 
 /**
- * Created by yuuki.sawanoi on 7/20/2017.
+ * Created by kengo.shirokane on 7/21/2017.
  */
-public class CharToxic extends GameObject
+public class BuluMB extends GameObject
 {
-    public CharToxic()
+    public BuluMB()
     {
-        super("ToxicZ", 32, 32, "ToxicZ.png");
-        setPosition(-80, -200);
+        super("BuluMB", 175, 130, "MoonblastZ.png");
+        setPosition(250, 100);
     }
 
     float counter = 0;
 
     public void update(float dt)
     {
-        //System.out.println("B: " + counter);
+        System.out.println("B: " + counter);
         counter += dt * 150;
 
-        setPosition(-80 + counter, -200 + counter);
+        setPosition(250 - counter, 100 - counter);
 
         if(counter > 300)
         {
@@ -31,8 +31,4 @@ public class CharToxic extends GameObject
             Level1.animated = false;
         }
     }
-
-        }
-
-
-
+}

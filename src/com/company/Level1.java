@@ -31,6 +31,10 @@ public class Level1 extends GameLevel {
     public static GameObject HPBAR;
     public static GameObject HPBAR2;
     public static boolean animated = false;
+    public static int HPI1=Main.CharizardHP;
+    public static int HPI2=Main.TapuLeleHP;
+    public static int HPP1=100;
+    public static int HPP2=100;
 
 
     @Override
@@ -179,68 +183,61 @@ public class Level1 extends GameLevel {
 
         // System.out.println("AAAAAAAAAA");
 
-        if (animated == false) {
+        while (animated == false) {
             if (InputManager.getMousePosition().getX() > 30 && InputManager.getMousePosition().getX() < 169 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
                 System.out.println("DragonClaw");
                 MoveChosen = true;
                 MoveUsed = "Dragon Claw";
+                animated = true;
 
             }
             if (InputManager.getMousePosition().getX() > 279 && InputManager.getMousePosition().getX() < 417 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
                 System.out.println("Toxic");
                 MoveChosen = true;
                 MoveUsed = "Toxic";
+                animated = true;
 
             }
             if (InputManager.getMousePosition().getX() > 580 && InputManager.getMousePosition().getX() < 720 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
                 System.out.println("Fire Spin");
                 MoveChosen = true;
                 MoveUsed = "Fire Spin";
+                animated = true;
 
             }
             if (InputManager.getMousePosition().getX() > 829 && InputManager.getMousePosition().getX() < 969 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
                 System.out.println("Hyper Beam");
                 MoveChosen = true;
                 MoveUsed = "Hyper Beam";
+                animated = true;
 
             }
 
-            MoveUsed = "";
-            animated = true;
+          //  MoveUsed = "";
+
         }
         int OpponentMove = rand.nextInt(3) + 1;
         if (OpponentMove == 1) {
             //Animation
             Main.MoveUsed2 = "Psychic";
-            Main.Physical1 = false;
+         //   Main.Physical1 = false;
         }
         if (OpponentMove == 2) {
             //Animation
             Main.MoveUsed2 = "Moon Blast";
-            Main.Physical1 = false;
+         //   Main.Physical1 = false;
         }
         if (OpponentMove == 3) {
             //Animation
             Main.MoveUsed2 = "Psyshock";
-            Main.Physical1 = false;
+         //   Main.Physical1 = false;
         }
         if (OpponentMove == 4) {
             //Animation
             Main.MoveUsed2 = "Hidden Power Dragon";
-            Main.Physical1 = false;
+         //   Main.Physical1 = false;
         }
-        if (Main.Physical1 == false) {
-            Main.Damage2M = DamageCalculation.evaluate(100, Main.CharizardSpA, Main.Damage2M, Main.TapuLeleSpD, 1, 10);
-        }
-        if (Main.Physical1) {
-            Main.Damage2M = DamageCalculation.evaluate(100, Main.CharizardAtk, Main.Damage2M, Main.TapuLeleD, 1, 10);
-        }
-        if (Main.Physical2 == false) {
-            Main.Damage2P = DamageCalculation.evaluate(100, Main.TapuLeleSpA, Main.Damage2P, Main.CharizardSpD, 1, 10);
-        }
-        if (Main.Physical2) {
-            Main.Damage2P = DamageCalculation.evaluate(100, Main.TapuLeleAtk, Main.Damage2P, Main.CharizardD, 1, 10);
-        }
+
         if (MoveUsed.equals("Dragon Claw")) {
             Charizard.kill();
             GameObject CharizardDragClaw = new CharizardDragonClaw();
@@ -252,7 +249,7 @@ public class Level1 extends GameLevel {
             Main.Damage2M=80;
             MoveUsed = "";
             Main.Physical1 = true;
-            animated = true;
+         //   animated = true;
         }
         if (MoveUsed.equals("Toxic")) {
             GameObject CharToxic = new CharToxic();
@@ -273,7 +270,7 @@ public class Level1 extends GameLevel {
             }
         }
         MoveUsed = "";
-        animated = true;
+       // animated = true;
 
 
         if (MoveUsed.equals("Fire Spin")) {
@@ -288,7 +285,7 @@ public class Level1 extends GameLevel {
             Main.Damage2M = 20;
 
             MoveUsed = "";
-            animated = true;
+         //   animated = true;
 
         }
         if (MoveUsed.equals("Hyper Beam")) {
@@ -309,13 +306,72 @@ public class Level1 extends GameLevel {
 
             }
         }
+        if(Main.MoveUsed2.equals("Psychic"))
+        {
+            GameObject Psychic=new BuluPsychic();
+            ObjectManager.addGameObject(Psychic);
+            Psychic.kill();
+            Main.Damage2P=90;
+            Main.MoveUsed2 = "";
+            Main.Physical2 = false;
+          //  animated = true;
+        }
+        if(Main.MoveUsed2.equals("Moonblast"))
+        {
+            Main.Damage2P=95;
+            Main.MoveUsed2 = "";
+            Main.Physical2 = false;
 
+            GameObject MB=new BuluMB();
+            ObjectManager.addGameObject(MB);
+            MB.kill();
+           // animated = true;
+        }
+        if(Main.MoveUsed2.equals("Psyshock"))
+        {
+            GameObject Psychic=new BuluPsychic();
+            ObjectManager.addGameObject(Psychic);
+            Psychic.kill();
+            Main.Damage2P=85;
+            Main.MoveUsed2 = "";
+            Main.Physical2 = false;
+           // animated = true;
+        }
+        if(Main.MoveUsed2.equals("Hidden Power Dragon"))
+        {
+            GameObject HPD=new HPD();
+            ObjectManager.addGameObject(HPD);
+            HPD.kill();
+            Main.Damage2P=60;
+            Main.MoveUsed2 = "";
+            Main.Physical2 = false;
+            //animated = true;
+        }
+
+        if (Main.Physical1 == false) {
+            Main.Damage2M = DamageCalculation.evaluate(100, Main.CharizardSpA, Main.Damage2M, Main.TapuLeleSpD, 1, 10);
+        }
+        if (Main.Physical1) {
+            Main.Damage2M = DamageCalculation.evaluate(100, Main.CharizardAtk, Main.Damage2M, Main.TapuLeleD, 1, 10);
+        }
+        if (Main.Physical2 == false) {
+            Main.Damage2P = DamageCalculation.evaluate(100, Main.TapuLeleSpA, Main.Damage2P, Main.CharizardSpD, 1, 10);
+        }
+        if (Main.Physical2) {
+            Main.Damage2P = DamageCalculation.evaluate(100, Main.TapuLeleAtk, Main.Damage2P, Main.CharizardD, 1, 10);
+        }
+        HPI1-=Main.Damage2P;
+        HPP1=HPI1/Main.CharizardHP;
+        HPI2-=Main.Damage2M;
+        HPP2=HPI2/Main.TapuLeleHP;
             //do chance calculation
 
-            // HPBAR.kill();
+             HPBAR.kill();
             //create new HPBAR
-
-            //  ObjectManager.addGameObject(HPBAR);
+            HPBAR=new HPBAR(HPP1, 100, 50);
+              ObjectManager.addGameObject(HPBAR);
+        HPBAR2=new HPBAR(HPP2, 225,200);
+        ObjectManager.addGameObject(HPBAR2);
             //copy from extra code
             //move animation to bottom
             //make it repeat

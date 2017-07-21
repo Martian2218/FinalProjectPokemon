@@ -19,7 +19,7 @@ public class CharizardDragonClaw extends GameObject
 
     public void update(float dt)
     {
-        System.out.println("B: " + counter);
+     //   System.out.println("B: " + counter);
         counter += dt * 300;
 
         setPosition(-175 + counter, -200 + counter);
@@ -30,7 +30,7 @@ public class CharizardDragonClaw extends GameObject
             kill();
             Level1.Charizard=new Charizard3();
             ObjectManager.addGameObject(Level1.Charizard);
-            Level1.animated = false;
+           // Level1.animated = false;
         }
     }
 
