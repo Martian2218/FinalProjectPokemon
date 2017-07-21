@@ -7,8 +7,9 @@ import edu.digipen.gameobject.GameObject;
  */
 public class HPBAR extends GameObject
 {
-    public HPBAR()
+    public HPBAR(int Y, int X, int Y2)
     {
-        super("HPBAR", 10, 100, "HPBAR.png");
+        super("HPBAR", Y*2, 30, "HPBAR.png");
+        setPosition(X, Y2);
     }
 }
