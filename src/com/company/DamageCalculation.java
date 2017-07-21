@@ -13,7 +13,8 @@ public class DamageCalculation {
    // public static int Attack;
     public static int Damage = 0;
 
-    public int DamageCalculation(int A, int B, int C, int D, int X, int Y) {
+
+    public static int evaluate(int A, int B, int C, int D, int X, int Y) {
         int Z = rand.nextInt(38) + 217;
         Damage = 2 * A;
         Damage /= 5;
@@ -26,7 +27,7 @@ public class DamageCalculation {
         Damage /= 10;
         Damage *= Z;
         Damage /= 255;
-    return Damage;
+         return Damage;
 
 
     }

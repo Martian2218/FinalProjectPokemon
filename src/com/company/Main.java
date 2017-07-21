@@ -224,6 +224,8 @@ public class Main {
     public static int GarchompSpA = 196;
     public static int GarchompSpD = 206;
     public static int GarchompSp = 240;
+    public static boolean Physical1=false;
+    public static boolean Physical2=false;
     //Normal=1
     //Fire=2
     //Ice=3

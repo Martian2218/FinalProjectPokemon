@@ -30,6 +30,7 @@ public class Level1 extends GameLevel {
     public static GameObject Charizard;
     public static boolean animated = false;
 
+
     @Override
     public void create() {
 //Charizard3.kill();
@@ -163,21 +164,23 @@ public class Level1 extends GameLevel {
             GameObject HyperBeam = new MoveCreator("HyperBeam", 400, -300);
             ObjectManager.addGameObject(HyperBeam);
         }
+        //Create HP Bar here
     }
 
 
     @Override
     public void update(float dt) {
-       // System.out.println("AAAAAAAAAA");
 
-        if(animated == false) {
+        // System.out.println("AAAAAAAAAA");
+
+        if (animated == false) {
             if (InputManager.getMousePosition().getX() > 30 && InputManager.getMousePosition().getX() < 169 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
                 System.out.println("DragonClaw");
                 MoveChosen = true;
                 MoveUsed = "Dragon Claw";
 
             }
-           if (InputManager.getMousePosition().getX() > 279 && InputManager.getMousePosition().getX() < 417 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
+            if (InputManager.getMousePosition().getX() > 279 && InputManager.getMousePosition().getX() < 417 && InputManager.getMousePosition().getY() < 704 && InputManager.getMousePosition().getY() > 666 && InputManager.isMouseButtonTriggered(0)) {
                 System.out.println("Toxic");
                 MoveChosen = true;
                 MoveUsed = "Toxic";
@@ -204,100 +207,138 @@ public class Level1 extends GameLevel {
                 // Charizard=new Charizard3();
                 // ObjectManager.addGameObject(Charizard);
                 MoveUsed = "";
+                Main.Physical1=true;
                 animated = true;
             }
-            if(MoveUsed.equals("Toxic"))
-            {
+            if (MoveUsed.equals("Toxic")) {
                 GameObject CharToxic = new CharToxic();
                 ObjectManager.addGameObject(CharToxic);
 
 
-                    Main.type1 = 9;
-                    Main.ChanceP = 100;
-                    ExtraCode.ChanceSP(Main.Pokemon3);
-                    if (Main.ystatus == false) {
-                        if (Main.Hit1) {
-                            Main.Poisoned2 = true;
-                            Main.status2 = 5;
-                            Main.Damage2M = 10;
-                        }
-                    } else {
-                        Main.Hit1 = false;
+                Main.type1 = 9;
+                Main.ChanceP = 100;
+                ExtraCode.ChanceSP(Main.Pokemon3);
+                if (Main.ystatus == false) {
+                    if (Main.Hit1) {
+                        Main.Poisoned2 = true;
+                        Main.status2 = 5;
+                        Main.Damage2M = 10;
                     }
+                } else {
+                    Main.Hit1 = false;
                 }
-                MoveUsed = "";
-                animated = true;
-
             }
-            if(MoveUsed.equals("Fire Spin"))
+            MoveUsed = "";
+            animated = true;
+
+        }
+        if (MoveUsed.equals("Fire Spin")) {
+            GameObject CharFS = new CharFS();
+            ObjectManager.addGameObject(CharFS);
+            Main.Physical1 = false;
+            if (Main.user.equals(Main.Pokemon3)) {
+                Main.ChanceP = 100;
+                Main.type1 = 2;
+                Main.xHit1 = 3;
+                Main.yHit1 = 3;
+                Main.Damage2M = 20;
+            } else if (Main.Opponent.equals(Main.Pokemon3)) {
+                Main.ChanceM = 100;
+                Main.type2 = 2;
+                Main.xHit2 = 3;
+                Main.yHit2 = 3;
+                Main.Damage2P = 20;
+            }
+            MoveUsed = "";
+            animated = true;
+        }
+        if (MoveUsed.equals("Hyper Beam")) {
+            GameObject CharHB = new CharHB();
+            ObjectManager.addGameObject(CharHB);
+            Main.Physical1 = false;
+            if (Main.user.equals(Main.Pokemon3)) {
+                Main.ChanceP = 100;
+                Main.type1 = 1;
+                if (Main.wasDis1 == true) {
+                    Main.Disabled1 = false;
+                    Main.wasDis1 = false;
+                } else {
+                    Main.Disabled1 = true;
+                    Main.wasDis1 = true;
+                    Main.Damage2M = 140;
+
+                }
+            } else if (Main.Opponent.equals(Main.Pokemon3))
+
             {
-                GameObject CharFS = new CharFS();
-                ObjectManager.addGameObject(CharFS);
-                if (Main.user.equals(Main.Pokemon3)) {
-                    Main.ChanceP = 100;
-                    Main.type1 = 2;
-                    Main. xHit1 = 3;
-                    Main.yHit1 = 3;
-                    Main.Damage2M = 20;
-                } else if (Main.Opponent.equals(Main.Pokemon3)) {
-                    Main.ChanceM = 100;
-                    Main.type2 = 2;
-                    Main.xHit2 = 3;
-                    Main.yHit2 = 3;
-                    Main.Damage2P = 20;
+                Main.ChanceM = 100;
+                Main.type2 = 1;
+                if (Main.wasDis2 == true) {
+                    Main.Disabled2 = false;
+                } else {
+                    Main.Disabled2 = true;
+                    Main.wasDis2 = true;
+                    Main.Damage2P = 140;
                 }
-                MoveUsed = "";
-                animated = true;
+
             }
-            if(MoveUsed.equals("Hyper Beam"))
-            {
-                GameObject CharHB = new CharHB();
-                ObjectManager.addGameObject(CharHB);
-                if (Main.user.equals(Main.Pokemon3)) {
-                    Main.ChanceP = 100;
-                    Main.type1 = 1;
-                    if (Main.wasDis1 == true) {
-                        Main.Disabled1 = false;
-                        Main.wasDis1 = false;
-                    } else {
-                        Main.Disabled1 = true;
-                        Main.wasDis1 = true;
-                        Main.Damage2M = 140;
-
-                    }
-                } else if (Main.Opponent.equals(Main.Pokemon3))
-
-                {
-                    Main.ChanceM = 100;
-                    Main.type2 = 1;
-                    if (Main.wasDis2 == true) {
-                        Main.Disabled2 = false;
-                    } else {
-                        Main.Disabled2 = true;
-                        Main.wasDis2 = true;
-                        Main.Damage2P = 140;
-                    }
-
-                }
-                MoveUsed = "";
-                animated = true;
-            }
-        int OpponentMove=rand.nextInt(3)+1;
-        if(OpponentMove==1)
+            MoveUsed = "";
+            animated = true;
+        }
+        int OpponentMove = rand.nextInt(3) + 1;
+        if (OpponentMove == 1) {
+            //Animation
+            Main.MoveUsed2 = "Psychic";
+            Main.Physical1 = false;
+        }
+        if (OpponentMove == 2) {
+            //Animation
+            Main.MoveUsed2 = "Moon Blast";
+            Main.Physical1 = false;
+        }
+        if (OpponentMove == 3) {
+            //Animation
+            Main.MoveUsed2 = "Psyshock";
+            Main.Physical1 = false;
+        }
+        if (OpponentMove == 4) {
+            //Animation
+            Main.MoveUsed2 = "Hidden Power Dragon";
+            Main.Physical1 = false;
+        }
+        if(Main.Physical1==false)
         {
-            Main.MoveUsed2="Psychic";
+            Main.Damage2M = DamageCalculation.evaluate(100, Main.CharizardSpA, Main.Damage2M, Main.TapuLeleSpD, 1, 10);
         }
-        if (OpponentMove==2)
+if(Main.Physical1)
+{
+    Main.Damage2M = DamageCalculation.evaluate(100, Main.CharizardAtk, Main.Damage2M, Main.TapuLeleD, 1, 10);
+}
+        if(Main.Physical2==false)
         {
-            Main.MoveUsed2="Moon Blast";
+            Main.Damage2P = DamageCalculation.evaluate(100, Main.TapuLeleSpA, Main.Damage2P, Main.CharizardSpD, 1, 10);
         }
-            if(InputManager.isMouseButtonTriggered(0))
-            {
-                System.out.println(InputManager.getMousePosition());
-            }
+        if(Main.Physical2)
+        {
+            Main.Damage2P = DamageCalculation.evaluate(100, Main.TapuLeleAtk, Main.Damage2P, Main.CharizardD, 1, 10);
+        }
+        //do chance calculation
 
+        HPBAR.kill();
+        //create new HPBAR
+        HPBAR = new HPBAR();
+        ObjectManager.addGameObject(HPBAR);
+        //copy from extra code
+        //move animation to bottom
+        //make it repeat
+        animated = false;
+
+        if(InputManager.isMouseButtonTriggered(0))
+        {
+            System.out.println(InputManager.getMousePosition());
         }
-        // label.Change("New Text");
+    }
+    // label.Change("New Text");
 
        /* if (InputManager.isMouseButtonPressed(0))
         {
